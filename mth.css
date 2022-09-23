@@ -1,0 +1,120 @@
+/* ":root"tag para variaveis de css, variaveis serve para deixar ja separado as coisas que você vai usar tipo (cores) e sempre tem que ter "--" esses dois traços antes e depois que marcar isso na tag :root para usar em outras tags vc usa "var(-- e o numero da cor que voce escolheu)"*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: rgb(206, 206, 173);
+}
+p{
+    margin: 15px 0px;
+    text-align: justify;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to top, rgb(94, 30, 116), rgb(41, 54, 172), rgb(47, 116, 47));
+    color: white;
+    min-height: 150px;
+    box-shadow: 0px 1px 3px 3px rgb(29, 27, 27);
+    text-shadow: 10px 1px 1px 10px black;
+    padding-bottom: 10px;
+}
+header h1{
+    display: flex;
+    padding: 30px 10px 10px 10px;
+    margin: 0px auto 20px;
+    justify-content: center;
+    font-weight: 600;
+}
+header p{
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 20px;
+    padding: 10px;
+}
+nav a{
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: rgb(7, 53, 9);
+    background-color: rgb(11, 87, 11);
+}
+main a{
+    text-decoration: none;
+    color: rgb(24, 68, 35);
+    background-color: rgba(100, 212, 150, 0.507);
+}
+main a::after{
+    content: '\00A0\1F517';
+}
+main a:hover{
+    text-decoration: underline;
+}
+main{
+    flex-direction: row;
+    background-color: white;
+    margin:auto;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 1px 0px 7px 2px rgb(82, 76, 76);  
+    max-width: 800px;
+    min-width: 320px;
+}
+section{
+    text-align: center;
+}
+section article h1{
+    font-size: 26px;
+    text-align: left;
+    border-radius: 5px;
+}
+section article h1{
+    color: rgb(58, 51, 51);
+    background-image: linear-gradient(to right, rgb(88, 199, 88), transparent);
+}
+.scontainer{
+    background-color: rgb(127, 206, 127);
+    border-radius: 10px;
+    padding: 0px 1px;
+}
+.scontainer article h2{
+    background-color: darkgreen;
+    border-radius: 10px 10px 0px 0px;
+    text-align: left;
+    padding: 10px 10px 10px;
+    color: white;
+}
+.scontainer article ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+aside{
+    background-color: aqua;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+aside iframe{
+position: absolute;
+top: 5%;
+left: 5%;
+width: 90%;
+height: 90%;
+}
+footer{
+    background-color: darkgreen;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+}
